@@ -44,7 +44,7 @@ img {
   max-width: 100%;
 }
 
-#posts{
+#posts {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -62,7 +62,6 @@ img {
   overflow: hidden;
   border: 1px solid var(--border);
   text-align: left;
-
 }
 
 .post__header {
@@ -233,23 +232,40 @@ img {
   text-transform: uppercase;
   text-align: right;
 }
-.post__content{
+.post__content {
   margin: 10px 0;
   color: gray;
 }
 
-#liked{
+#liked {
   display: none;
 }
-#reported{
+#reported {
   display: none;
+}
+/* Q/A Section */
+#qa-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#qa-section p,
+h3 {
+  text-align: left;
+  text-align: justify;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 992px) {
   #posts {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 @media only screen and (max-width: 576px) {
   #posts {

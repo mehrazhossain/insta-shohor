@@ -152,19 +152,27 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
+  const removeLiked = document.getElementById('liked');
+  removeLiked.innerHTML = '';
   const likedPosts = getLikedPosts();
   likedPosts.forEach((post) => {
     const div = createPost(post);
     document.getElementById('liked').appendChild(div);
   });
+  const hideQASection = document.getElementById('qa-section');
+  hideQASection.style.display = 'none';
 };
 
 const displayReportedPosts = () => {
+  const removeReportedImge = document.getElementById('reported');
+  removeReportedImge.innerHTML = '';
   const reportedPosts = getReportedPosts();
   reportedPosts.forEach((post) => {
     const div = createPost(post);
     document.getElementById('reported').appendChild(div);
   });
+  const hideQASection = document.getElementById('qa-section');
+  hideQASection.style.display = 'none';
 };
 
 const loadPosts = async () => {
